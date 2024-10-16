@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Diri Mahasiswa</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-size: 14px;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="form-container">
+        <h2>Form Data Diri Mahasiswa</h2>
+        <form action="gif.html" method="GET">
+            <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+            <label for="nim">NIM:</label>
+            <input type="number" id="nim" name="nim" placeholder="Masukkan NIM" required>
+
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+
+                <option value="">Pilih Jurusan</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Teknik Tenaga Listrik">Teknik Tenaga Listrik</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+                <option value="Teknik Sistem Energi">Teknik Sistem Energi</option>
+                <option value="Bisnis Energi">Bisnis Energi</option>
+                <option value="Teknik Elektro">Teknik Elektro</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+            </select>
+
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
